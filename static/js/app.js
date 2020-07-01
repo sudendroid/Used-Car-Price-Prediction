@@ -8,7 +8,7 @@ function onClickedEstimatePrice() {
   var ownerType = getOwnerType();
   var estPrice = document.getElementById("uiEstimatedPrice");
 
-  var url = "http://127.0.0.1:5000/api/predict-used-car-price";
+  var url = "/api/predict-used-car-price";
 
   $.post(url, {
       km_driven: parseInt(kmDriven.value),
@@ -35,7 +35,7 @@ function getOwnerType() {
 }
 
 function loadCarNames(){
-    var url = "http://127.0.0.1:5000/api/get-car-names";
+    var url = "/api/get-car-names";
        $.get(url,function(data, status) {
           console.log("got response for get_brand_names request");
           if(data) {
@@ -51,7 +51,7 @@ function loadCarNames(){
 }
 
 function loadCities(){
-    var url = "http://127.0.0.1:5000/api/get-cities";
+    var url = "/api/get-cities";
        $.get(url,function(data, status) {
           console.log("got response for get_brand_names request");
           if(data) {
