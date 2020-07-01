@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="img"></div>
+<form class="form">
+    <h2>Car Name</h2>
+    <div>
+        <select class="location" name="" id="uiCarName">
+            <option value="" disabled="disabled" selected="selected">Choose Car Name</option>
+            <option>Maruti Swift zxi</option>
+            <option>Tata eon magna</option>
+        </select>
+    </div>
+
+    <h2>Location</h2>
+    <div>
+        <select class="location" name="" id="uiLocation">
+            <option value="" disabled="disabled" selected="selected">Choose City</option>
+            <option>Jaipur</option>
+            <option>Alwar</option>
+        </select>
+    </div>
+
+    <h2>Registration Year</h2>
+    <div>
+        <select class="location" name="" id="uiRegYear">
+            <option value="" disabled="disabled" selected="selected">Choose Registration Year</option>
+            <option>2008</option>
+            <option>2009</option>
+            <option>2010</option>
+            <option>2011</option>
+            <option>2012</option>
+            <option>2013</option>
+            <option>2014</option>
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+            <option>2020</option>
+        </select>
+    </div>
+
+    <h2>Owner Type</h2>
+    <div class="switch-field">
+        <input type="radio" id="radio-bhk-1" name="uiOwner" value="1"/>
+        <label for="radio-bhk-1">First</label>
+        <input type="radio" id="radio-bhk-2" name="uiOwner" value="2" checked/>
+        <label for="radio-bhk-2">Second</label>
+        <input type="radio" id="radio-bhk-3" name="uiOwner" value="3"/>
+        <label for="radio-bhk-3">Third</label>
+        <input type="radio" id="radio-bhk-4" name="uiOwner" value="4"/>
+        <label for="radio-bhk-4">Fourth</label>
+    </div>
+
+    <h2>Kilometer Driven</h2>
+    <input class="area" type="email" id="uiKmDriven" class="floatLabel" name="Squareft" value="10000">
+
+    <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+    <div id="uiEstimatedPrice" class="result"><h2></h2></div>
+
+</form>
+{% endblock %}
