@@ -45,6 +45,6 @@ def predict_used_car_price():
     return response
 
 
-if __name__ == "main":
+if __name__ == "__main__":
     load_saved_artifacts()
     app.run(debug=True)
