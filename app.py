@@ -45,6 +45,7 @@ def predict_used_car_price():
     return response
 
 
+# load data on app start so that we dont need to load and process data for each request
+load_saved_artifacts()
 if __name__ == "__main__":
-    load_saved_artifacts()
     app.run(debug=True)

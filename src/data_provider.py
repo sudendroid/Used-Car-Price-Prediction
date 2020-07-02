@@ -43,12 +43,10 @@ def evaluate_used_car(km_driven, reg_year, owner_type, variant_name, location):
 
 
 def get_used_car_names():
-    load_saved_artifacts()
     return __used_car_variants
 
 
 def get_used_car_cities():
-    load_saved_artifacts()
     return __used_car_cities
 
 
